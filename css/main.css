@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 8px;
+  height: 1000px;
+}
+
+.bg_logo_wrapper {
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  height: 100%;
+  align-items: center;
+  box-shadow: 0px 0px 4px ;
+}
+
+.form_wrapper {
+  width: 450px;
+  height: 500px;
+  padding: 40px 20px 15px 20px;
+  background-color: #fafafa;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0,0,0,.3);
+  border-radius: 8px;
+  align-items: center;
+  display: inline-block;
+}
+
+.logo_wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+}
+
+.triangle-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 50px solid rgba(0,0,255,.5);
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.triangle-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 50px solid rgba(255,0,0,.5);
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+input {
+  border-radius: 8px;
+  width: 100%;
+  height: 45px;
+  line-height: 15px;
+  padding: 15px;
+  margin-bottom: 30px;
+  border: 1px solid gray;
+}
+
+
+
+
+
+input:focus {
+  border-color: blue;
+  box-shadow: 0px 0px 3px teal;
+}
+
+input[type='button'] {
+  color: white;
+  background-color: lightblue;
+  border: 1px solid blue;
+}
+
+input[type='button']:hover {
+  background-color: blue;
+}
+
+.bottom_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom_wrapper > a {
+  justify-content: space-around;
+  text-decoration: none;
+  font-size: 80%;
+  color: grey;
+
+}

@@ -1,7 +1,15 @@
+/*
+  Reset all elelements to border-box
+*/
 * {
   box-sizing: border-box;
 }
 
+
+
+/* 
+  Background
+*/
 body {
   padding: 8px;
   height: 1000px;
@@ -16,33 +24,44 @@ body {
   box-shadow: 0px 0px 4px ;
 }
 
-.form_wrapper {
+ 
+
+/*
+  Window
+*/
+.window_wrapper {
   width: 450px;
-  height: 500px;
-  padding: 40px 20px 15px 20px;
-  background-color: #fafafa;
+  min-width: 400px;
+  padding: 40px 30px 15px 30px;
+  background-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 4px 4px rgba(0,0,0,.3);
   border-radius: 8px;
-  align-items: center;
-  display: inline-block;
 }
 
+
+
+/*
+  Logo
+*/
 .logo_wrapper {
+  margin-bottom: 40px;
+}
+
+.triangle_wrapper {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 32px;
+  height: 32px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 70px;
 }
 
 .triangle-1 {
   position: absolute;
   top: 0;
   left: 0;
-  border: 50px solid rgba(0,0,255,.5);
+  border: 16px solid rgba(231,115,13);
   border-top-color: transparent;
   border-left-color: transparent;
 }
@@ -51,11 +70,23 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  border: 50px solid rgba(255,0,0,.5);
+  border: 16px solid rgba(244,191,0);
   border-bottom-color: transparent;
   border-right-color: transparent;
 }
 
+.name {
+  margin: 24px;
+  text-align: center;
+  color: #21315e;
+  margin: 0;
+}
+
+
+
+/*
+  Input form
+*/
 input {
   border-radius: 8px;
   width: 100%;
@@ -63,7 +94,9 @@ input {
   line-height: 15px;
   padding: 15px;
   margin-bottom: 30px;
-  border: 1px solid gray;
+  color: #4f555f;
+  border: 1px solid #e4e8ef;
+  transition: .5s;
 }
 
 .password_wrapper {
@@ -71,11 +104,14 @@ input {
 }
 
 #toggle {
-  color: grey;
-  font-size: 28px;
+  color: #4f555f;
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
   height: 45px;
   position: absolute;
-  right: 10px;
+  right: 0;
+  width: 40px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -84,30 +120,29 @@ input {
 }
 
 input:focus {
-  border-color: blue;
-  box-shadow: 0px 0px 3px teal;
+  border-color:#8ee2ac;
+  box-shadow: 0px 0px 5px #8ee2ac;
 }
 
 input[type='button'] {
   color: white;
-  background-color: lightblue;
+  background-color: #426fff;
   border: 1px solid blue;
 }
 
 input[type='button']:hover {
-  background-color: blue;
+  background-color: #135ae5;
+}
+
+.small_link {
+  text-decoration: none;
+  font-size: 75%;
+  color: #4f555f;
 }
 
 .bottom_wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
-.bottom_wrapper > a {
-  text-decoration: none;
-  font-size: 80%;
-  color: grey;
-
-}

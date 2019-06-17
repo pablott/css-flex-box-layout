@@ -66,9 +66,22 @@ input {
   border: 1px solid gray;
 }
 
+.password_wrapper {
+  position: relative;
+}
 
-
-
+#toggle {
+  color: grey;
+  font-size: 28px;
+  height: 45px;
+  position: absolute;
+  right: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
 
 input:focus {
   border-color: blue;
@@ -88,10 +101,11 @@ input[type='button']:hover {
 .bottom_wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+
 }
 
 .bottom_wrapper > a {
-  justify-content: space-around;
   text-decoration: none;
   font-size: 80%;
   color: grey;

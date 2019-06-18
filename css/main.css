@@ -161,6 +161,7 @@ input {
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  opacity: .5;
 }
 
 input:focus {

@@ -12,16 +12,54 @@
 */
 body {
   padding: 8px;
-  height: 1000px;
 }
 
-.bg_logo_wrapper {
+/* NOTE: Since triangles are made with CSS borders, and border property only accepts px,
+   there is no way of doing a banckground with triangles that adjust automatically to window size changes
+*/
+.big_triangle_wrapper {
+  position: absolute;
+  width: 942px;
+  height: 694px;
+  margin-top: 5px;
+  background: rgba(0,0,0,.3);
+  opacity: .2;
+}
+
+.big_triangle-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 16px solid rgba(231,115,13);
+  border-width: 0 0 694px 942px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.big_triangle-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 16px solid rgba(244,191,0);
+  border-width: 0 0 694px 942px;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+
+/*
+  Main wrapper
+*/
+.main_wrapper {
+  width: 942px;
+  height: 694px; 
+  position: absolute;
   display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: grey;
-  height: 100%;
-  align-items: center;
-  box-shadow: 0px 0px 4px ;
+  margin-top: 5px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 4px rgba(0,0,0,.5);
 }
 
  
@@ -31,11 +69,9 @@ body {
 */
 .window_wrapper {
   width: 450px;
-  min-width: 400px;
+  min-width: 300px;
   padding: 40px 30px 15px 30px;
   background-color: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
   box-shadow: 0px 4px 4px rgba(0,0,0,.3);
   border-radius: 8px;
 }

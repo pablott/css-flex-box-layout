@@ -47,12 +47,20 @@ body {
 }
 
 
+
 /*
   Main wrapper
 */
 .main_wrapper {
   width: 942px;
   height: 694px; 
+  /* For checking dynamic window size, uncomment below */
+  /*
+  top: 40px;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  */
   position: absolute;
   display: flex;
   justify-content: center;
